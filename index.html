@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚾ Ultra Baseball ⚾</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-wrapper">
+        <div id="scoreboard">
+            <div class="team-score" id="away-score">VISITOR<span>0</span></div>
+            <div id="inning-display">1回表</div>
+            <div class="team-score" id="home-score">HOME<span>0</span></div>
+            <div id="sbo-display">
+                <div class="sbo-item">S <span class="sbo-light" id="strike1"></span><span class="sbo-light" id="strike2"></span></div>
+                <div class="sbo-item">B <span class="sbo-light" id="ball1"></span><span class="sbo-light" id="ball2"></span><span class="sbo-light" id="ball3"></span></div>
+                <div class="sbo-item">O <span class="sbo-light" id="out1"></span><span class="sbo-light" id="out2"></span></div>
+            </div>
+        </div>
+
+        <div id="game-container">
+            <div id="field">
+                <div class="base" id="home-plate"></div>
+                <div class="base" id="first-base"></div>
+                <div class="base" id="second-base"></div>
+                <div class="base" id="third-base"></div>
+                <div id="pitchers-mound"></div>
+
+                <div class="runner" id="runner1"></div>
+                <div class="runner" id="runner2"></div>
+                <div class="runner" id="runner3"></div>
+
+                <div class="player" id="pitcher"></div>
+                <div class="player" id="batter">
+                    <div id="bat"></div>
+                </div>
+                <div id="ball"></div>
+            </div>
+        </div>
+
+        <div id="message-box">
+            クリックしてゲーム開始
+        </div>
+
+        <div id="controls">
+            <button id="reset-button" class="hidden">もう一度プレイ</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
